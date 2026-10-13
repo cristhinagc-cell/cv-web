@@ -6,9 +6,34 @@
 <title>Gabriela C. Cruz | Integraciones y APIs</title>
 <style>
 :root{--bg:#0c1423;--panel:#142137;--ink:#eaf1fa;--muted:#aabbd0;--accent:#64d5c5;--line:#2a3c55}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--accent)}.wrap{max-width:1050px;margin:auto;padding:0 26px}.top{border-bottom:1px solid var(--line);background:#101b2e}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 0}.brand{font-weight:800;letter-spacing:.02em}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;color:var(--muted);font-size:14px}.hero{padding:90px 0 70px}.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-size:13px;font-weight:700}h1{font-size:clamp(38px,7vw,70px);line-height:1.08;letter-spacing:-.045em;margin:16px 0}h2{font-size:29px;letter-spacing:-.025em;margin:0 0 26px}h3{font-size:20px;margin:0 0 6px}.lead{font-size:19px;color:var(--muted);max-width:760px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 19px;border-radius:9px;text-decoration:none;background:var(--accent);color:#082321;font-weight:750}.btn.secondary{background:transparent;border:1px solid var(--line);color:var(--ink)}section{padding:56px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:25px}.muted{color:var(--muted)}.date{color:var(--accent);font-size:14px;font-weight:650}.tags{display:flex;flex-wrap:wrap;gap:9px}.tag{border:1px solid #3a526c;background:#1a2a40;border-radius:7px;padding:7px 11px;font-size:14px}ul{padding-left:20px}li{margin-bottom:8px}.timeline{display:grid;gap:20px}.foot{padding:32px 0;color:var(--muted);font-size:13px}.contact{display:flex;flex-wrap:wrap;gap:15px}button{cursor:pointer}@media(max-width:700px){.grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}.hero{padding:65px 0 50px}}@media print{body{background:white;color:#111;font-size:12px}.top,.actions{display:none}.card{background:white;border:1px solid #ddd}.muted,.lead{color:#444}section{padding:20px 0}.hero{padding:20px 0}a{color:#111}.tag{background:white;color:#111}.wrap{max-width:none}}
+.idiomas {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 15px 26px;
+}
+
+.idiomas button {
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 8px 14px;
+  font-weight: bold;
+}
+
+.idiomas button:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
 </style>
 </head>
 <body>
+  <div class="idiomas">
+  <button onclick="cambiarIdioma('es')">ES</button>
+  <button onclick="cambiarIdioma('en')">EN</button>
+  <button onclick="cambiarIdioma('nl')">NL</button>
+</div>
 <header class="top"><div class="wrap nav"><div class="brand">GABRIELA C. CRUZ</div><nav class="navlinks" aria-label="Navegación"><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#tecnologias">Tecnologías</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a></nav></div></header>
 <main>
 <div class="wrap hero"><div class="eyebrow">Integraciones tecnológicas · APIs REST · ERP</div><h1>Gabriela C. Cruz</h1><p class="lead">Consultora API | Análisis técnico y funcional de integraciones entre sistemas empresariales.</p><p class="muted">Córdoba, Argentina · Perfil orientado a oportunidades remotas</p><div class="actions"><a class="btn" href="mailto:cristhina.gc@gmail.com">Contactar por email</a><a class="btn secondary" href="https://www.linkedin.com/in/gabriela-c-cruz-b746a01ab" target="_blank" rel="noopener noreferrer">Ver LinkedIn ↗</a><button class="btn secondary" onclick="window.print()">Guardar como PDF</button></div></div>
@@ -16,6 +41,45 @@
 <section id="experiencia"><div class="wrap"><h2>Experiencia profesional</h2><div class="timeline"><article class="card"><div class="date">Octubre 2023 — Actualidad</div><h3>Consultora API | Análisis y soporte de integraciones</h3><div class="muted">Flexxus · Córdoba, Argentina</div><ul><li>Análisis de necesidades de integración y evaluación de las capacidades de los endpoints disponibles.</li><li>Instalación, configuración, actualización y validación de APIs REST.</li><li>Pruebas de solicitudes y respuestas, análisis de logs e investigación de incidencias técnicas y funcionales.</li><li>Análisis de consultas SQL y procedimientos almacenados.</li><li>Coordinación con clientes y equipos de Desarrollo e Infraestructura para abordar problemas de integración.</li></ul></article><article class="card"><div class="date">Diciembre 2022 — Septiembre 2023</div><h3>Especialista en soporte técnico (ERP)</h3><div class="muted">DLR Software · Córdoba, Argentina</div><ul><li>Soporte técnico y funcional a usuarios de un ERP.</li><li>Análisis y resolución de incidencias, validaciones en SQL Server y PostgreSQL.</li><li>Colaboración con Desarrollo, configuración de impresoras fiscales y seguimiento de tickets.</li></ul></article><article class="card"><div class="date">Noviembre 2021 — Diciembre 2022</div><h3>Telemarketing</h3><div class="muted">VN Global BPO · Argentina</div></article></div></div></section>
 <section id="tecnologias"><div class="wrap"><h2>Conocimientos y herramientas</h2><div class="grid"><div class="card"><h3>Integración y soporte</h3><div class="tags"><span class="tag">APIs REST</span><span class="tag">JSON</span><span class="tag">Postman</span><span class="tag">Swagger</span><span class="tag">ERP Flexxus</span><span class="tag">Análisis de incidencias</span><span class="tag">Documentación técnica</span></div></div><div class="card"><h3>Entorno técnico</h3><div class="tags"><span class="tag">SQL</span><span class="tag">Firebird</span><span class="tag">SQL Server</span><span class="tag">PostgreSQL</span><span class="tag">Node.js</span><span class="tag">PM2</span><span class="tag">Docker</span></div></div></div></div></section>
 <section id="formacion"><div class="wrap"><h2>Formación</h2><div class="grid"><div class="card"><h3>Analista de Sistemas</h3><div class="muted">Instituto Superior Santo Domingo · 2024–2026 (en curso)</div></div><div class="card"><h3>Formación complementaria</h3><ul><li>IT Essentials / CCNA1 — Cisco Networking Academy</li><li>DBA I: Diseño de Base de Datos Relacional Oracle — UTN</li><li>Testing QA — Trabajadores Informáticos</li><li>Diseño UX/UI — Coderhouse</li></ul></div></div></div></section>
+<section id="idiomas">
+  <div class="wrap">
+    <h2>Idiomas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Español</h3>
+        <p class="muted">Nativo</p>
+      </div>
+
+      <div class="card">
+        <h3>Neerlandés</h3>
+        <p class="muted">A1</p>
+      </div>
+
+   <div class="card">
+        <h3>Inglés</h3>
+        <p class="muted">Elemental</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contacto"><div class="wrap"><h2>Contacto</h2><p class="muted">Disponible para conversar sobre oportunidades en integración de sistemas, soporte de aplicaciones y análisis técnico-funcional.</p><div class="contact"><a href="mailto:cristhina.gc@gmail.com">cristhina.gc@gmail.com</a><a href="https://www.linkedin.com/in/gabriela-c-cruz-b746a01ab" target="_blank" rel="noopener noreferrer">Perfil de LinkedIn ↗</a></div></div></section>
 </main><footer class="wrap foot">© 2026 Gabriela C. Cruz · CV web profesional</footer>
-</body></html>
+<script>
+function cambiarIdioma(idioma) {
+  const titulo = document.getElementById("tituloPerfil");
+
+  if (idioma === "es") {
+    titulo.textContent = "Perfil profesional";
+  }
+
+  if (idioma === "en") {
+    titulo.textContent = "Professional profile";
+  }
+
+  if (idioma === "nl") {
+    titulo.textContent = "Professioneel profiel";
+  }
+
+  document.documentElement.lang = idioma;
+}

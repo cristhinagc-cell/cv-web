@@ -67,18 +67,19 @@
 </main><footer class="wrap foot">© 2026 Gabriela C. Cruz · CV web profesional</footer>
 <script>
 function cambiarIdioma(idioma) {
+  const titulo = document.getElementById("tituloPerfil");
+
   if (idioma === "es") {
-    alert("Seleccionaste Español");
+    titulo.textContent = "Perfil profesional";
   }
 
   if (idioma === "en") {
-    alert("You selected English");
+    titulo.textContent = "Professional profile";
   }
 
   if (idioma === "nl") {
-    alert("Je hebt Nederlands geselecteerd");
+    titulo.textContent = "Professioneel profiel";
   }
+
+  document.documentElement.lang = idioma;
 }
-</script>
-</body>
-</html>
